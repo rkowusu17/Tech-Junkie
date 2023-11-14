@@ -7,9 +7,12 @@
   /* COLORS */
   --HEADER-BGCOLOR: darkgreen;
   --HEADER-COLOR: #333;
-  --BGCOLOR: black;
+  --BGCOLOR: #333;
   --COLOR: green;
   --HEADER-COLOR: #333;
+  --FS: 1.5rem;
+  --BORDER: 1px solid green;
+  --BRADIUS: 15px;
 }
 
 header {
@@ -26,7 +29,7 @@ header h1 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-ul {
+nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,14 +37,17 @@ ul {
   list-style-type: none;
 }
 
-ul a {
+nav a {
   text-decoration: none;
   color: #333;
   font-size: 25px;
   font-weight: bold;
 }
-a:hover {
+nav ul a:hover {
   text-decoration: underline;
+}
+nav {
+  box-shadow: 2px 5px 5px black;
 }
 
 body {
@@ -62,7 +68,28 @@ main {
   flex-grow: 1;
   max-width: 90%;
 }
+main p {
+  margin-bottom: 40px;
+}
+main a {
+  color: green;
+  text-decoration: none;
+}
+main a:hover {
+  text-decoration: underline;
+}
 
+div {
+  min-width: 600px;
+  height: 300px;
+  border: var(--BORDER);
+  border-radius: var(--BRADIUS);
+  text-align: center;
+  margin-bottom: 40px;
+}
+div abbr {
+  text-decoration: none;
+}
 footer {
   text-align: center;
   background-color: var(--HEADER-BGCOLOR);
