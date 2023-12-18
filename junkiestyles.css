@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -73,22 +74,30 @@ main {
   display: flex;
   flex-flow: column nowrap;
   flex-grow: 1;
-  max-width: 90%;
+  max-width: 95%;
 }
 main p {
   margin-bottom: 40px;
 }
-main a {
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* width: 100%; */
+}
+
+section a {
+  width: 80%;
   color: green;
   text-decoration: none;
 }
-main a:hover {
+section a:hover {
   text-decoration: underline;
 }
 
 div {
-  max-width: 600px;
-  width: 90%;
+  width: 100%;
   height: 300px;
   border: var(--BORDER);
   border-radius: var(--BRADIUS);
@@ -97,6 +106,15 @@ div {
 }
 div abbr {
   text-decoration: none;
+}
+
+@media screen and (min-width: 700px) {
+  section {
+    gap: 20px;
+  }
+  section a {
+    width: 40%;
+  }
 }
 footer {
   text-align: center;
