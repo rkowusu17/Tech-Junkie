@@ -43,6 +43,8 @@ nav ul {
   align-items: center;
   background: var(--HEADER-BGCOLOR);
   list-style-type: none;
+  /* position: sticky;
+  top: 0px; */
 }
 
 nav a {
@@ -105,6 +107,7 @@ div {
   text-align: center;
   margin-bottom: 40px;
 }
+
 div h3 {
   border-bottom: 2px solid transparent;
 }
@@ -114,6 +117,13 @@ section a:hover > div > h3 {
 
 div abbr {
   text-decoration: none;
+}
+fieldset {
+  padding: 1rem;
+  width: 100%;
+}
+legend {
+  text-align: center;
 }
 
 @media screen and (min-width: 700px) {
