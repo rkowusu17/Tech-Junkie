@@ -158,7 +158,7 @@ input {
 input:focus {
   border: 2px solid green;
 }
-button {
+.create {
   border: none;
   border-radius: 5px;
   padding: 0.5rem;
