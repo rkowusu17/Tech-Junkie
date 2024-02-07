@@ -26,12 +26,12 @@
     <main>
       <form action="" class="max-w-full">
         <fieldset
-          class="border-solid border-slate-500 border-2 dark:border-slate-50 max-w-4xl mx-auto p-4 flex flex-col"
+          class="text-center border-solid border-slate-500 border-2 dark:border-slate-50 max-w-4xl mx-auto p-4 flex flex-col justify-center items-center"
         >
           <legend class="text-center">Create-account</legend>
           <label for="fname">First-Name :</label>
           <input
-            class="max-w-2xl rounded-lg p-2"
+            class="mx-auto w-2/3 rounded-lg p-2"
             type="text"
             id="fname"
             required
@@ -39,7 +39,7 @@
 
           <label for="Lname">Last-Name :</label>
           <input
-            class="max-w-2xl rounded-lg p-2"
+            class="mx-auto w-2/3 rounded-lg p-2"
             type="text"
             id="Lname"
             required
@@ -47,13 +47,13 @@
 
           <label for="mail">E-mail :</label>
           <input
-            class="max-w-2xl rounded-lg p-2"
+            class="mx-auto w-2/3 rounded-lg p-2"
             type="email"
             id="mail"
             required
           />
           <label for="country">country:</label>
-          <input type="text" class="max-w-2xl sm:w-1/2 rounded-lg p-2" />
+          <input type="text" class="mx-auto w-2/3 sm:w-1/2 rounded-lg p-2" />
           <label for="phone">Phone-number :</label>
           <!-- <select class="text-black rounded-lg inline-block" name="phone" id="phone">
             <option value="+233">+233</option>
@@ -62,18 +62,21 @@
             <option value="+55">+55</option>
           </select> -->
           <input
-            class="max-w-2xl rounded-lg p-2 sm:w-1/3"
+            class="mx-auto w-2/3 rounded-lg p-2 sm:w-1/3"
             type="tel"
             id="phone"
           />
 
           <label for="date-of birth">Date of Birth:</label>
-          <input type="date" class="max-w-2xl rounded-lg p-2 text-black" />
+          <input
+            type="date"
+            class="mx-auto max-w-2xl rounded-lg p-2 text-black"
+          />
 
           <section class="flex flex-col sm:flex-row gap-3 my-3">
             <label class="sm:hidden" for="Pass">Password :</label>
             <input
-              class="placeholder-transparent max-w-2xl rounded-lg p-2 sm:w-1/3 sm:placeholder-black"
+              class="mx-auto placeholder-transparent max-w-2xl rounded-lg p-2 sm:w-1/3 sm:placeholder-black"
               type="password"
               id="Pass"
               placeholder="Password"
@@ -82,7 +85,7 @@
 
             <label class="sm:hidden" for="Cpass">Confirm Password :</label>
             <input
-              class="placeholder-transparent max-w-2xl rounded-lg p-2 sm:w-1/3 sm:placeholder-black"
+              class="mx-auto placeholder-transparent max-w-2xl rounded-lg p-2 sm:w-1/3 sm:placeholder-black"
               type="password"
               placeholder="Confirm-Password"
               id="Cpass"
