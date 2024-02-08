@@ -17,8 +17,9 @@
           <button>&#9776;</button>
         </div>
         <nav class="hidden sm:flex flex-row gap-10">
-          <a class="hover:opacity-70" href="about.html">About</a>
           <a class="hover:opacity-70" href="start.html">Home</a>
+          <a class="hover:opacity-70" href="about.html">About</a>
+
           <a class="hover:opacity-70" href="contacts.html">Contact</a>
         </nav>
       </section>
@@ -55,12 +56,22 @@
           <label for="country">country:</label>
           <input type="text" class="mx-auto w-2/3 sm:w-1/2 rounded-lg p-2" />
           <label for="phone">Phone-number :</label>
-          <!-- <select class="text-black rounded-lg inline-block" name="phone" id="phone">
-            <option value="+233">+233</option>
-            <option value="+234">+234</option>
-            <option value="+1">+1</option>
-            <option value="+55">+55</option>
-          </select> -->
+
+          <!-- <section class="flex flex-row gap-1">
+            <div class="w-2/5 sp-2">
+              <select
+                class="text-black rounded-lg inline-block"
+                name="phone"
+                id="phone"
+              >
+                <option value="+233">+233</option>
+                <option value="+234">+234</option>
+                <option value="+1">+1</option>
+                <option value="+55">+55</option>
+              </select>
+            </div>
+           x
+          </section> -->
           <input
             class="mx-auto w-2/3 rounded-lg p-2 sm:w-1/3"
             type="tel"
@@ -68,15 +79,12 @@
           />
 
           <label for="date-of birth">Date of Birth:</label>
-          <input
-            type="date"
-            class="mx-auto max-w-2xl rounded-lg p-2 text-black"
-          />
+          <input type="date" class="mx-auto w-2/3 rounded-lg p-2 text-black" />
 
           <section class="flex flex-col sm:flex-row gap-3 my-3">
             <label class="sm:hidden" for="Pass">Password :</label>
             <input
-              class="mx-auto placeholder-transparent max-w-2xl rounded-lg p-2 sm:w-1/3 sm:placeholder-black"
+              class="mx-auto placeholder-transparent w-2/3 rounded-lg p-2 sm:w-1/3 sm:placeholder-black"
               type="password"
               id="Pass"
               placeholder="Password"
@@ -85,7 +93,7 @@
 
             <label class="sm:hidden" for="Cpass">Confirm Password :</label>
             <input
-              class="mx-auto placeholder-transparent max-w-2xl rounded-lg p-2 sm:w-1/3 sm:placeholder-black"
+              class="mx-auto placeholder-transparent w-2/3 rounded-lg p-2 sm:w-1/3 sm:placeholder-black"
               type="password"
               placeholder="Confirm-Password"
               id="Cpass"
