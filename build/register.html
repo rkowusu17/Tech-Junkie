@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
     <script src="apps.js" defer></script>
   </head>
   <body class="bg-slate-700 dark:bg-black text-white min-h-full">
-    <header class="bg-teal-700 sticky top-0 z-10">
+    <header class="bg-teal-700 mb-10 sticky top-0 z-10">
       <section
         class="mx-auto p-4 text-2xl text-white flex justify-around sm:justify-between max-w-4xl"
       >
@@ -24,7 +24,18 @@
         </nav>
       </section>
     </header>
-    <main>
+    <main id="hero" class="scroll-m-20 mb-11">
+      <section class="sm:flex gap-10">
+        <div
+          class="w-52 h-52 rounded-2xl bg-teal-400 mx-auto my-10 hover:scale-125"
+        ></div>
+        <div
+          class="w-52 h-52 rounded-2xl bg-teal-400 mx-auto my-10 hover:scale-125"
+        ></div>
+        <div
+          class="w-52 h-52 rounded-2xl bg-teal-400 mx-auto my-10 hover:scale-125"
+        ></div>
+      </section>
       <form action="" class="max-w-full">
         <fieldset
           class="text-center border-solid border-slate-500 border-2 dark:border-slate-50 max-w-4xl mx-auto p-4 flex flex-col justify-center items-center"
@@ -54,7 +65,11 @@
             required
           />
           <label for="country">country:</label>
-          <input type="text" class="mx-auto w-2/3 sm:w-1/2 rounded-lg p-2" />
+          <input
+            type="text"
+            id="country"
+            class="mx-auto w-2/3 sm:w-1/2 rounded-lg p-2"
+          />
           <label for="phone">Phone-number :</label>
 
           <!-- <section class="flex flex-row gap-1">
@@ -79,12 +94,16 @@
           />
 
           <label for="date-of birth">Date of Birth:</label>
-          <input type="date" class="mx-auto w-2/3 rounded-lg p-2 text-black" />
+          <input
+            type="date"
+            id="date-of birth"
+            class="mx-auto w-2/3 rounded-lg p-2 text-black"
+          />
 
-          <section class="flex flex-col sm:flex-row gap-3 my-3">
+          <section class="max-w-4xl flex flex-col sm:flex-row gap-3 my-3">
             <label class="sm:hidden" for="Pass">Password :</label>
             <input
-              class="mx-auto placeholder-transparent w-2/3 rounded-lg p-2 sm:w-1/3 sm:placeholder-black"
+              class="mx-auto w-5/6 placeholder-transparent rounded-lg p-2 sm:w-2/3 sm:placeholder-black"
               type="password"
               id="Pass"
               placeholder="Password"
@@ -93,7 +112,7 @@
 
             <label class="sm:hidden" for="Cpass">Confirm Password :</label>
             <input
-              class="mx-auto placeholder-transparent w-2/3 rounded-lg p-2 sm:w-1/3 sm:placeholder-black"
+              class="mx-auto placeholder-transparent w-5/6 rounded-lg p-2 sm:w-2/3 sm:placeholder-black"
               type="password"
               placeholder="Confirm-Password"
               id="Cpass"
@@ -106,7 +125,8 @@
         </fieldset>
       </form>
     </main>
-    <footer class="text-2xl bg-teal-700 text-white text-center p-2">
+
+    <footer class="text-2xl bg-teal-700 text-white text-center p-2 m-4">
       Thank you for visiting us....<br />
       TechJunkie &copy; <span id="year"></span>
     </footer>
