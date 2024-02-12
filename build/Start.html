@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/output.css" />
     <script src="apps.js" defer></script>
   </head>
-  <body class="text-white bg-black min-h-full flex flex-col">
+  <body class="text-white bg-black min-h-full">
     <header class="bg-teal-700 mb-10 sticky top-0 z-10">
       <section
         class="mx-auto p-4 text-2xl text-white flex justify-around sm:justify-between max-w-4xl"
@@ -25,16 +25,21 @@
       </section>
     </header>
 
-    <main id="top" class="min text-xl">
-      <p>
+    <main id="top" class="mb-5 text-xl min">
+      <p class="p-4">
         Tech Junkie is all about what you've to know about Tech... from trouble
         shooting of your computer to issueing of commands (codes) to the
         computer. You will really enjoy out here on this page... You can surf
         through using the links below :
       </p>
-      <section class="links">
+      <section
+        class="flex flex-col flex-wrap sm:flex-row gap-3 justify-center items-center mt-5"
+      >
         <a href="#">
-          <div class="ides">
+          <div
+            id="ideas"
+            class="w-80 h-52 bg-teal-900 grid place-content-center hover:opacity-45 sm:w-56"
+          >
             <h3>
               <abbr title="(Integrated-Development-Environment)">IDEs</abbr> &
               Extensions
@@ -42,17 +47,26 @@
           </div>
         </a>
         <a href="#">
-          <div class="youtube">
+          <div
+            id="youtube"
+            class="w-80 h-52 bg-teal-900 grid place-content-center hover:opacity-45 sm:w-56"
+          >
             <h3>Tuts on Youtube</h3>
           </div>
         </a>
         <a href="#">
-          <div class="Roadmaps">
+          <div
+            id="roadmaps"
+            class="w-80 h-52 bg-teal-900 grid place-content-center hover:opacity-45 sm:w-56"
+          >
             <h3>Road-maps</h3>
           </div>
         </a>
         <a href="#">
-          <div class="Motivation">
+          <div
+            id="motivation"
+            class="w-80 h-52 bg-teal-900 grid place-content-center hover:opacity-45 sm:w-56"
+          >
             <h3>Motivation</h3>
           </div>
         </a>
