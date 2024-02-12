@@ -19,10 +19,12 @@
           <button>&#9776;</button>
         </div>
         <nav class="hidden sm:flex flex-row gap-10">
-          <a class="hover:opacity-70" href="register.html">Register</a>
-          <a class="hover:opacity-70" href="about.html">About</a>
+          <a class="hover:opacity-70" href="register.html">Register/Login</a>
+          <a class="hover:opacity-70" href="#about">About</a>
 
           <a class="hover:opacity-70" href="contacts.html">Contact</a>
+
+          <a class="hover:opacity-70" href="#tuts">Resources</a>
         </nav>
       </section>
     </header>
@@ -31,16 +33,17 @@
       id="top"
       class="flex flex-col mb-5 text-2xl min sm:flex-col scroll-m-12"
     >
-      <div class="p-6 sm:flex sm:gap-4">
-        <p class="p-4 sm:w-2/5">
-          Tech Junkie is all about what you've to know about Tech... from
-          trouble shooting of your computer to issueing of commands (codes) to
-          the computer. You will really enjoy out here on this page... You can
+      <div id="about" class="p-4 sm:flex sm:gap-4 scroll-m-20">
+        <p class="p-4 sm:w-2/5 sm:text-4xl">
+          Tech Junkie is all about what you have to know about Tech... From
+          trouble-shooting your computer to issueing of commands (codes) to the
+          computer. This will entail: Front-end to Back-end, Full-stack, Data
+          Analysis, etc. You will really enjoy out here on this page... You can
           surf through using the links below:
         </p>
 
         <img
-          class="mx-auto w-3/5 h-3/5 rounded-xl sm:w-2/5"
+          class="m-2 mx-auto w-3/5 h-3/5 rounded-xl sm:w-2/5 sm:h-96"
           src="tech.jpg"
           alt="Tech"
         />
@@ -48,7 +51,8 @@
       <hr class="w-3/5 mx-auto h-1 bg-black dark:bg-white" />
 
       <section
-        class="flex flex-col flex-wrap sm:flex-row gap-3 justify-center items-center mt-5 mb-5"
+        id="tuts"
+        class="flex flex-col flex-wrap sm:flex-row gap-5 justify-center items-center mt-5 mb-5 scroll-m-20"
       >
         <a href="#">
           <div
